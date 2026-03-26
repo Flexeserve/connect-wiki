@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Overview
+# Connect Overview
 
 Connect by Flexeserve is an award-winning, cloud-based service designed to transform the way hot-held food operations are managed. As the world's first cloud-based platform dedicated to hot-holding, it gives operators unprecedented control over their entire hot food program, enabling remote scheduling, temperature adjustment, menu configuration, daypart automation, and real-time data insights, all through a single, intuitive interface.
 
