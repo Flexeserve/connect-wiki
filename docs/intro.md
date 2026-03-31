@@ -2,6 +2,8 @@
 sidebar_position: 1
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # Connect Overview
 
 Connect by Flexeserve is an award-winning, cloud-based service designed to transform the way hot-held food operations are managed. As the world's first cloud-based platform dedicated to hot-holding, it gives operators unprecedented control over their entire hot food program, enabling remote scheduling, temperature adjustment, menu configuration, daypart automation, and real-time data insights, all through a single, intuitive interface.
@@ -9,3 +11,54 @@ Connect by Flexeserve is an award-winning, cloud-based service designed to trans
 By replacing manual processes with intelligent automation, Connect helps businesses operate more efficiently while maintaining consistent food quality across every location. It reduces food waste, lowers energy consumption, and minimizes the reliance on in-store labor.
 
 Connect integrates seamlessly with both new Connect-ready equipment and existing Flexeserve units through a simple upgrade pathway, making it easy to scale across single sites or entire estates.
+
+Connect delivers a suite of intelligent, cloud-based capabilities that simplify and automate hot holding operations at scale. By centralizing control and providing real-time visibility, Connect removes the need for manual intervention at store level. This allows operators to run more consistent, efficient, and sustainable hot food programs across all locations.
+
+## Core Capabilities
+
+<div className="row">
+  <div className="col col--6 margin-bottom--lg">
+    <div className="card padding--lg connect-overview-card">
+      <div className="connect-overview-card__content">
+        <div className="connect-overview-card__text">
+          <h3>Monitoring Dashboard</h3>
+          <p>View real-time performance, temperatures across your connected estate.</p>
+        </div>
+        <img className="connect-overview-card__image" src={useBaseUrl('/img/Monitoring.svg')} alt="Monitoring dashboard icon" />
+      </div>
+    </div>
+  </div>
+  <div className="col col--6 margin-bottom--lg">
+    <div className="card padding--lg connect-overview-card">
+      <div className="connect-overview-card__content">
+        <div className="connect-overview-card__text">
+          <h3>Scheduling</h3>
+          <p>Manage schedules centrally to keep operations consistent across locations.</p>
+        </div>
+        <img className="connect-overview-card__image" src={useBaseUrl('/img/Scheduling.svg')} alt="Scheduling icon" />
+      </div>
+    </div>
+  </div>
+  <div className="col col--6 margin-bottom--lg">
+    <div className="card padding--lg connect-overview-card">
+      <div className="connect-overview-card__content">
+        <div className="connect-overview-card__text">
+          <h3>Daypart Automation</h3>
+          <p>Automate changes by time of day reducing manual effort.</p>
+        </div>
+        <img className="connect-overview-card__image" src={useBaseUrl('/img/Scheduling.svg')} alt="Daypart automation icon" />
+      </div>
+    </div>
+  </div>
+  <div className="col col--6 margin-bottom--lg">
+    <div className="card padding--lg connect-overview-card">
+      <div className="connect-overview-card__content">
+        <div className="connect-overview-card__text">
+          <h3>Operator View</h3>
+          <p>Give in-store teams a clear, focused interface for daily checks and actions.</p>
+        </div>
+        <img className="connect-overview-card__image" src={useBaseUrl('/img/Operators.svg')} alt="Operator view icon" />
+      </div>
+    </div>
+  </div>
+</div>

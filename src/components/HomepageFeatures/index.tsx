@@ -12,7 +12,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'Real Time',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/RealTime.svg').default,
     description: (
       <>
         Connect gives real-time insights into your hot food holding units. Ensuring your food is always at the right temperature, and your customers are always satisfied.
@@ -20,22 +20,24 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Automated Scheduling',
+    Svg: require('@site/static/img/Scheduling.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Set up daypart schedules and menu transitions once, then let Connect
+        apply them automatically across stores. Reduce manual intervention and
+        keep operations consistent throughout the day.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Performance & Compliance',
+    Svg: require('@site/static/img/Performance.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Track holding performance, temperature compliance, and operational
+        trends from one dashboard. Spot exceptions early, improve consistency,
+        and support better decision-making across every location.
       </>
     ),
   },
