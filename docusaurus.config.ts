@@ -69,7 +69,12 @@ const config: Config = {
           sidebarId: 'tutorialSidebar',
           position: 'left',
           label: 'Documentation',
-        }
+        },
+        {
+          to: '/support',
+          label: 'Support',
+          position: 'left',
+        },
       ],
     },
     footer: {
