@@ -56,6 +56,12 @@
   gap: 1rem;
 }
 
+.connect-overview-card__link {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+}
+
 .connect-overview-card__text {
   flex: 1 1 auto;
 }
