@@ -19,7 +19,7 @@ Connect delivers a suite of intelligent, cloud-based capabilities that simplify 
 <div className="row">
   <div className="col col--6 margin-bottom--lg">
     <div className="card padding--lg connect-overview-card">
-      <a className="connect-overview-card__link" href="#telemetry">
+      <a className="connect-overview-card__link" href={useBaseUrl('/docs/core-capabilities/telemetry-monitoring')}>
         <div className="connect-overview-card__content">
           <div className="connect-overview-card__text">
             <h3>Monitoring Dashboard</h3>
@@ -32,7 +32,7 @@ Connect delivers a suite of intelligent, cloud-based capabilities that simplify 
   </div>
   <div className="col col--6 margin-bottom--lg">
     <div className="card padding--lg connect-overview-card">
-      <a className="connect-overview-card__link" href="#scheduling">
+      <a className="connect-overview-card__link" href={useBaseUrl('/docs/core-capabilities/scheduling')}>
         <div className="connect-overview-card__content">
           <div className="connect-overview-card__text">
             <h3>Scheduling</h3>
@@ -45,7 +45,7 @@ Connect delivers a suite of intelligent, cloud-based capabilities that simplify 
   </div>
   <div className="col col--6 margin-bottom--lg">
     <div className="card padding--lg connect-overview-card">
-      <a className="connect-overview-card__link" href="#scheduling">
+      <a className="connect-overview-card__link" href={useBaseUrl('/docs/core-capabilities/daypart-automation')}>
         <div className="connect-overview-card__content">
           <div className="connect-overview-card__text">
             <h3>Daypart Automation</h3>
@@ -58,7 +58,7 @@ Connect delivers a suite of intelligent, cloud-based capabilities that simplify 
   </div>
   <div className="col col--6 margin-bottom--lg">
     <div className="card padding--lg connect-overview-card">
-      <a className="connect-overview-card__link" href="#operator-view">
+      <a className="connect-overview-card__link" href={useBaseUrl('/docs/core-capabilities/operator-view')}>
         <div className="connect-overview-card__content">
           <div className="connect-overview-card__text">
             <h3>Operator View</h3>
@@ -70,20 +70,6 @@ Connect delivers a suite of intelligent, cloud-based capabilities that simplify 
     </div>
   </div>
 </div>
-
-## Features by Connect
-
-### Scheduling {#scheduling}
-
-Configure and manage schedules centrally to maintain consistency across every location. 
-
-### Telemetry {#telemetry}
-
-Monitor real-time data and performance insights across stores and units from one platform.
-
-### Operator View {#operator-view}
-
-Provide operators with a clear interface for day-to-day actions, checks, and status updates.
 
 ## Login
 

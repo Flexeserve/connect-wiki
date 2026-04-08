@@ -10,6 +10,3 @@ Some Flexeserve units come with Connect built directly into the equipment.
 - Connect functionality fully integrated
 - Units connect directly to the store network 
 
-**What this means for customers:**
-
-A clean, fully integrated solution where equipment communicates directly with the Connect platform. 

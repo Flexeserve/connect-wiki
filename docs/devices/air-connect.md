@@ -12,7 +12,5 @@ Air Connect enables Connect across stores where equipment is located in differen
 - Seamlessly connects all units back to a central point
 - Designed to support real-world store layouts
 
-**What this means for customers:**
 
-Flexible connectivity that ensures every unit is included - regardless of location or layout.
 

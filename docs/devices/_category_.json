@@ -1,6 +1,6 @@
 {
   "label": "Devices",
-  "position": 2,
+  "position": 4,
   "link": {
     "type": "generated-index",
     "description": "Connect is designed to work across a wide range of store environments, whether equipment is network ready or distributed across different areas of the store. No matter the setup, every configuration delivers the same outcome: centralized control, real-time visbility, and consistent performance across all locations."

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 sidebar_label: Installation
 ---
 
@@ -54,4 +54,3 @@ The default configuration of the device uses DHCP to get its IP address, thus th
 Internet connection (recommended are fiber or DSL):
 - Minimum Speed: 300kBit/s (up and download).
 - Minimum latency: < 80ms (ping)
-
