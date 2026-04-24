@@ -15,14 +15,14 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://halixzed.github.io',
+  url: 'https://flexeserve.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/connect-wiki',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'halixzed', // Usually your GitHub org/user name.
+  organizationName: 'Flexeserve', // Usually your GitHub org/user name.
   projectName: 'connect-wiki', // Usually your repo name.
 
   onBrokenLinks: 'throw',
