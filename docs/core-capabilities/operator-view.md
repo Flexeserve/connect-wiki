@@ -15,3 +15,6 @@ The view is designed for speed and clarity so operators can identify what needs 
 - Improve response time to operational issues
 - Provide clearer task and status visibility
 - Support consistent execution across locations
+
+This simplifies training, improves consistency during busy periods, and helps teams execute with confidence.
+

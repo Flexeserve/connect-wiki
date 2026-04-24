@@ -3,6 +3,9 @@ sidebar_position: 2
 sidebar_label: Scheduling
 ---
 
+import ThemedImage from '@theme/ThemedImage';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # Scheduling
 
 Connect scheduling gives you central control over when units should run, hold, or transition between modes.
@@ -20,7 +23,13 @@ Schedules can be created and deployed centrally across all locations, eliminatin
 
 For store teams, this means less manual work. For operators, it means tighter control and improved efficiency.
 
-![Scheduling](/img/ScheduleImage.png)
+<ThemedImage
+  alt="Scheduling"
+  sources={{
+    light: useBaseUrl('/img/ScheduleImage.png'),
+    dark: useBaseUrl('/img/ScheduleImageDarkMode.png'),
+  }}
+/>
 
 ### Daypart Automation
 
