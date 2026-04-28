@@ -15,6 +15,8 @@
   --ifm-color-primary-lightest: #ec855c;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --theme-fade-duration: 420ms;
+  --theme-fade-ease: ease-in-out;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -27,6 +29,32 @@
   --ifm-color-primary-lighter: #ff9d73;
   --ifm-color-primary-lightest: #ffc3ab;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+html,
+body,
+.navbar,
+.footer,
+.main-wrapper,
+.card,
+button,
+input,
+select,
+textarea {
+  transition:
+    color var(--theme-fade-duration) var(--theme-fade-ease),
+    background-color var(--theme-fade-duration) var(--theme-fade-ease),
+    border-color var(--theme-fade-duration) var(--theme-fade-ease),
+    box-shadow var(--theme-fade-duration) var(--theme-fade-ease);
+}
+
+a,
+svg,
+path {
+  transition:
+    color var(--theme-fade-duration) var(--theme-fade-ease),
+    fill var(--theme-fade-duration) var(--theme-fade-ease),
+    stroke var(--theme-fade-duration) var(--theme-fade-ease);
 }
 
 .navbar__logo {
@@ -108,29 +136,7 @@
 .navbar [class*='colorModeToggle'] [class*='toggleButton'],
 .navbar [class*='toggle_'],
 .navbar [class*='toggleButton'] {
-  position: relative;
-  overflow: hidden;
   transition: background-color 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
-}
-
-.navbar [class*='toggle_']::before,
-.navbar [class*='toggleButton']::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 0.2rem;
-  width: 1rem;
-  height: 1rem;
-  border-radius: 999px;
-  background: var(--ifm-color-primary);
-  transform: translateY(-50%) translateX(0);
-  transition: transform 240ms cubic-bezier(0.2, 0.7, 0.2, 1);
-  pointer-events: none;
-}
-
-[data-theme='dark'] .navbar [class*='toggle_']::before,
-[data-theme='dark'] .navbar [class*='toggleButton']::before {
-  transform: translateY(-50%) translateX(1rem);
 }
 
 .navbar [class*='toggle_'] svg,
@@ -145,10 +151,24 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  html,
+  body,
+  .navbar,
+  .footer,
+  .main-wrapper,
+  .card,
+  button,
+  input,
+  select,
+  textarea,
+  a,
+  svg,
+  path {
+    transition: none;
+  }
+
   .navbar [class*='toggle_'],
   .navbar [class*='toggleButton'],
-  .navbar [class*='toggle_']::before,
-  .navbar [class*='toggleButton']::before,
   .navbar [class*='toggle_'] svg,
   .navbar [class*='toggleButton'] svg {
     transition: none;
