@@ -174,3 +174,32 @@ path {
     transition: none;
   }
 }
+
+
+@media (min-width: 997px) {
+  .connect-sidebar-toggle {
+    position: fixed;
+    top: calc(var(--ifm-navbar-height) + 1rem);
+    left: calc(var(--doc-sidebar-width, 300px) - 0.75rem);
+    z-index: 350;
+    width: 1.75rem;
+    height: 1.75rem;
+    border: 1px solid var(--ifm-color-emphasis-300);
+    border-radius: 999px;
+    background: var(--ifm-background-surface-color);
+    color: var(--ifm-font-color-base);
+    box-shadow: var(--ifm-global-shadow-lw);
+    cursor: pointer;
+    line-height: 1;
+    font-weight: 700;
+    padding: 0;
+  }
+
+  html.connect-sidebar-collapsed .theme-doc-sidebar-container {
+    display: none;
+  }
+
+  html.connect-sidebar-collapsed .connect-sidebar-toggle {
+    left: 0.5rem;
+  }
+}

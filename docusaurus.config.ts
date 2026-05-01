@@ -35,6 +35,8 @@ const config: Config = {
     locales: ['en'],
   },
 
+  clientModules: ['./src/clientModules/sidebarCollapse.ts'],
+
   presets: [
     [
       'classic',
