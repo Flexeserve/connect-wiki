@@ -77,16 +77,29 @@ function wireNavigationHooks(): void {
   window.addEventListener('popstate', emit);
 }
 
-export default function sidebarCollapseModule(): void {
+function sidebarCollapseModule(): void {
   wireNavigationHooks();
 
-  const sync = () => ensureToggle();
+  let scheduled = false;
+  const sync = () => {
+    if (scheduled) {
+      return;
+    }
+
+    scheduled = true;
+    window.requestAnimationFrame(() => {
+      ensureToggle();
+      scheduled = false;
+    });
+  };
+
   window.addEventListener('load', sync);
   window.addEventListener('resize', sync);
-  window.addEventListener('connect-route-change', () => window.setTimeout(sync, 0));
-
-  const observer = new MutationObserver(() => sync());
-  observer.observe(document.body, {childList: true, subtree: true});
+  window.addEventListener('connect-route-change', sync);
 
   sync();
+}
+
+if (typeof window !== 'undefined' && typeof document !== 'undefined') {
+  sidebarCollapseModule();
 }
