@@ -15,46 +15,6 @@
   --ifm-color-primary-lightest: #ec855c;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  --theme-fade-duration: 420ms;
-  --theme-fade-ease: ease-in-out;
-}
-
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #ff7a43;
-  --ifm-color-primary-dark: #ff6528;
-  --ifm-color-primary-darker: #ff5a19;
-  --ifm-color-primary-darkest: #da4300;
-  --ifm-color-primary-light: #ff8f5e;
-  --ifm-color-primary-lighter: #ff9d73;
-  --ifm-color-primary-lightest: #ffc3ab;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-}
-
-html,
-body,
-.navbar,
-.footer,
-.main-wrapper,
-.card,
-button,
-input,
-select,
-textarea {
-  transition:
-    color var(--theme-fade-duration) var(--theme-fade-ease),
-    background-color var(--theme-fade-duration) var(--theme-fade-ease),
-    border-color var(--theme-fade-duration) var(--theme-fade-ease),
-    box-shadow var(--theme-fade-duration) var(--theme-fade-ease);
-}
-
-a,
-svg,
-path {
-  transition:
-    color var(--theme-fade-duration) var(--theme-fade-ease),
-    fill var(--theme-fade-duration) var(--theme-fade-ease),
-    stroke var(--theme-fade-duration) var(--theme-fade-ease);
 }
 
 .navbar__logo {
@@ -109,15 +69,6 @@ path {
   flex: 0 0 72px;
 }
 
-[data-theme='dark'] .connect-overview-card {
-  border-color: rgba(255, 122, 67, 0.28);
-}
-
-[data-theme='dark'] .connect-overview-card:hover {
-  border-color: rgba(255, 157, 115, 0.5);
-  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.4);
-}
-
 @media (max-width: 576px) {
   .connect-overview-card__content {
     flex-direction: column;
@@ -131,68 +82,31 @@ path {
   }
 }
 
-/* Animate the Docusaurus navbar color mode toggle. */
-.navbar [class*='colorModeToggle'] [class*='toggle_'],
-.navbar [class*='colorModeToggle'] [class*='toggleButton'],
-.navbar [class*='toggle_'],
-.navbar [class*='toggleButton'] {
-  transition: background-color 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
-}
-
-.navbar [class*='toggle_'] svg,
-.navbar [class*='toggleButton'] svg {
-  transition: transform 220ms ease, opacity 220ms ease;
-}
-
-[data-theme='dark'] .navbar [class*='toggle_'] svg,
-[data-theme='dark'] .navbar [class*='toggleButton'] svg {
-  transform: rotate(18deg) scale(0.96);
-  opacity: 0.88;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html,
-  body,
-  .navbar,
-  .footer,
-  .main-wrapper,
-  .card,
-  button,
-  input,
-  select,
-  textarea,
-  a,
-  svg,
-  path {
-    transition: none;
-  }
-
-  .navbar [class*='toggle_'],
-  .navbar [class*='toggleButton'],
-  .navbar [class*='toggle_'] svg,
-  .navbar [class*='toggleButton'] svg {
-    transition: none;
-  }
-}
-
-
 @media (min-width: 997px) {
   .connect-sidebar-toggle {
     position: fixed;
     top: calc(var(--ifm-navbar-height) + 1rem);
-    left: calc(var(--doc-sidebar-width, 300px) - 0.75rem);
+    left: calc(var(--doc-sidebar-width, 300px) - 0.875rem);
     z-index: 350;
     width: 1.75rem;
     height: 1.75rem;
     border: 1px solid var(--ifm-color-emphasis-300);
-    border-radius: 999px;
+    border-radius: 50%;
     background: var(--ifm-background-surface-color);
-    color: var(--ifm-font-color-base);
-    box-shadow: var(--ifm-global-shadow-lw);
+    color: var(--ifm-color-emphasis-700);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
     cursor: pointer;
-    line-height: 1;
-    font-weight: 700;
     padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.2s ease, box-shadow 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+  }
+
+  .connect-sidebar-toggle:hover {
+    background-color: var(--ifm-color-emphasis-100);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+    color: var(--ifm-color-emphasis-900);
   }
 
   html.connect-sidebar-collapsed .theme-doc-sidebar-container {
