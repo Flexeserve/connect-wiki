@@ -109,11 +109,27 @@
     color: var(--ifm-color-emphasis-900);
   }
 
+  .theme-doc-sidebar-container {
+    transition: width 0.2s ease, min-width 0.2s ease;
+  }
+
+  .theme-doc-sidebar-container .menu {
+    transition: opacity 0.15s ease;
+  }
+
   html.connect-sidebar-collapsed .theme-doc-sidebar-container {
-    display: none;
+    width: 3rem !important;
+    min-width: 3rem !important;
+    overflow: hidden;
+  }
+
+  html.connect-sidebar-collapsed .theme-doc-sidebar-container .menu {
+    opacity: 0;
+    pointer-events: none;
   }
 
   html.connect-sidebar-collapsed .connect-sidebar-toggle {
-    left: 0.5rem;
+    /* centres the 1.75rem button in the 3rem rail: (3rem - 1.75rem) / 2 = 0.625rem */
+    left: 0.625rem;
   }
 }
