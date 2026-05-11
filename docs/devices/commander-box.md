@@ -1,26 +1,28 @@
 ---
 sidebar_position: 2
 sidebar_label: Commander Box
-description: Commander Box description goes in here
+description: Full-scale edge gateway for larger installations (≤32 controllers) with Ethernet-based connectivity, local logging, and alarm output.
 ---
 
 # Commander Box
 
-## Summary
-
-Full-scale edge gateway for larger installations (≤32 controllers) with Ethernet-based connectivity and extended I/O.
+:::info[Overview]
+Full-scale edge gateway for larger installations **(≤32 controllers)** with Ethernet-based connectivity and extended I/O.
 
 **Primary Role:** Serve as the master controller and supervisory gateway for large ST-Bus networks.
+:::
 
 ---
 
 ## Key Capabilities
 
-- Supports up to 32 controllers
-- Integrated web server + cloud integration
-- Local data logging (SD-based)
-- Alarm handling (relay + buzzer)
-- Advanced system monitoring via LED indicators
+| Capability | Detail |
+|------------|--------|
+| Controller Capacity | Up to 32 controllers |
+| Connectivity | Integrated web server + cloud integration |
+| Storage | Local data logging via SD card |
+| Alerting | Alarm handling via relay output + buzzer |
+| Monitoring | Advanced system monitoring via LED indicators |
 
 ---
 
@@ -28,14 +30,14 @@ Full-scale edge gateway for larger installations (≤32 controllers) with Ethern
 
 ### Network
 
-| Interface | Details |
-|-----------|---------|
+| Interface | Connector |
+|-----------|-----------|
 | Ethernet | 1x RJ45 |
 
 ### Field Communication
 
-| Interface | Details |
-|-----------|---------|
+| Interface | Bus |
+|-----------|-----|
 | ST-Bus | RS485 |
 | Modbus | RS485 |
 
@@ -55,7 +57,7 @@ Full-scale edge gateway for larger installations (≤32 controllers) with Ethern
 
 | Parameter | Value |
 |-----------|-------|
-| Input | 100–240V AC ±10%, 50/60 Hz |
+| Input Voltage | 100–240V AC ±10%, 50/60 Hz |
 | Max Consumption | ~20W |
 
 ---
@@ -65,10 +67,10 @@ Full-scale edge gateway for larger installations (≤32 controllers) with Ethern
 | Parameter | Value |
 |-----------|-------|
 | Dimensions | 170 x 120 x 45 mm |
-| Operating Temp | 0 to +55°C |
-| Storage Temp | -20 to +70°C |
-| Humidity | ≤75% (non-condensing) |
-| Protection | IP20, Class II |
+| Operating Temperature | 0 to +55°C |
+| Storage Temperature | -20 to +70°C |
+| Humidity | ≤75% non-condensing |
+| Protection Rating | IP20, Class II |
 
 ---
 
@@ -77,10 +79,14 @@ Full-scale edge gateway for larger installations (≤32 controllers) with Ethern
 | Parameter | Value |
 |-----------|-------|
 | Protocol | RS485 (ST-Bus / Modbus) |
-| Baud Rate | 57600 |
-| Max Cable Length | 1000m |
+| Baud Rate | 57,600 |
+| Max Cable Length | 1,000m |
 | Topology | Line (required) |
 | Termination | 120Ω at both ends |
+
+:::warning[Wiring Requirement]
+Line topology is **required**. Both ends of the RS485 bus must be terminated with **120Ω resistors** for reliable communication.
+:::
 
 ---
 
@@ -88,27 +94,27 @@ Full-scale edge gateway for larger installations (≤32 controllers) with Ethern
 
 ### Network / Cloud
 
-| Color | Meaning |
-|-------|---------|
-| Blue (solid) | Cloud connected |
-| Blinking cyan | Ethernet communication OK |
-| Amber | Cloud error |
-| Red | Ethernet / DNS / DHCP error |
+| Indicator | Status |
+|-----------|--------|
+| 🔵 Blue (solid) | Cloud connected |
+| 🔵 Blinking cyan | Ethernet communication OK |
+| 🟠 Amber | Cloud error |
+| 🔴 Red | Ethernet / DNS / DHCP error |
 
 ### ST-Bus
 
-| Color | Meaning |
-|-------|---------|
-| Blinking green | Communication OK |
-| Red | Communication error |
+| Indicator | Status |
+|-----------|--------|
+| 🟢 Blinking green | Communication OK |
+| 🔴 Red | Communication error |
 
 ### System
 
-| Color | Meaning |
-|-------|---------|
-| Green | Operational |
-| Blinking red | General error |
-| Amber | Processing error |
+| Indicator | Status |
+|-----------|--------|
+| 🟢 Green (solid) | Operational |
+| 🔴 Blinking red | General error |
+| 🟠 Amber | Processing error |
 
 ---
 
@@ -122,22 +128,26 @@ Full-scale edge gateway for larger installations (≤32 controllers) with Ethern
 
 ### Alarm Handling
 
-- Physical relay output (K1)
-- Integrated buzzer for on-site alerting
-- Alarm aggregation across all controllers
+- Physical relay output (K1) for external alarm devices
+- Integrated buzzer (~85 dB) for on-site alerting
+- Alarm aggregation across all connected controllers
 
 ### Cloud Interaction
 
-- Same as Mini, but at larger scale
-- Designed for centralized system visibility
+- Full cloud integration at scale
+- Designed for centralized system visibility across large deployments
 
 ---
 
 ## Best Use Case
 
+:::tip[Ideal Deployment]
+The Commander Box is best suited for **large, high-density sites** that require robust monitoring, physical alarm outputs, and centralized cloud visibility.
+:::
+
 - Large sites (multi-unit / multi-zone)
 - High controller density (e.g., Circle K scale)
-- Installations needing:
-  - Alarm outputs
-  - Physical signaling
-  - More robust monitoring
+- Installations requiring:
+  - Physical alarm relay output
+  - On-site audio signaling
+  - Advanced system monitoring
